@@ -187,6 +187,9 @@
   <ItemGroup>
     <Content Include="App_LocalResources\Settings.ascx.resx" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Package\TidyModules.DocumentExplorer_00.01.00_Install.zip" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
