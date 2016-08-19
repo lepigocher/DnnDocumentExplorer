@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Features.Section" xml:space="preserve">
+    <value>Other Features</value>
+  </data>
+  <data name="FileGrid.Section" xml:space="preserve">
+    <value>File Columns and Features</value>
+  </data>
+  <data name="FilterMatchModeContains.Text" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="FilterMatchModeStartWith.Text" xml:space="preserve">
+    <value>Start With</value>
+  </data>
+  <data name="lblDateBodyClass.Help" xml:space="preserve">
+    <value>Enter the CSS class of the body of the file date column.</value>
+  </data>
+  <data name="lblDateBodyClass.Text" xml:space="preserve">
+    <value>Body Class:</value>
+  </data>
+  <data name="lblDateFilter.Help" xml:space="preserve">
+    <value>Allow to filter on the file date column.</value>
+  </data>
+  <data name="lblDateFilter.Text" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="lblDateFilterMatchMode.Help" xml:space="preserve">
+    <value>Choose the filter match mode of the file date column.</value>
+  </data>
+  <data name="lblDateFilterMatchMode.Text" xml:space="preserve">
+    <value>Filter Mode:</value>
+  </data>
+  <data name="lblDateHeaderClass.Help" xml:space="preserve">
+    <value>Enter the CSS class of the header of the file date column.</value>
+  </data>
+  <data name="lblDateHeaderClass.Text" xml:space="preserve">
+    <value>Header Class:</value>
+  </data>
+  <data name="lblDateSortable.Help" xml:space="preserve">
+    <value>Allow to sort on the file date column.</value>
+  </data>
+  <data name="lblDateSortable.Text" xml:space="preserve">
+    <value>Sortable:</value>
+  </data>
+  <data name="lblFileManagement.Help" xml:space="preserve">
+    <value>Allow file management (Cut, Copy, Paste, Delete). Even when this feature is enabled the folder permission always apply.</value>
+  </data>
+  <data name="lblFileManagement.Text" xml:space="preserve">
+    <value>File Management:</value>
+  </data>
+  <data name="lblFontAwesomeCSS.Help" xml:space="preserve">
+    <value>Enter the CDN URL of the Font Awesome CSS file.</value>
+  </data>
+  <data name="lblFontAwesomeCSS.Text" xml:space="preserve">
+    <value>Font Awesome CSS:</value>
+  </data>
+  <data name="lblJqueryUICSS.Help" xml:space="preserve">
+    <value>Enter the CDN URL of the jQuery UI CSS file.</value>
+  </data>
+  <data name="lblJqueryUICSS.Text" xml:space="preserve">
+    <value>jQuery UI CSS:</value>
+  </data>
+  <data name="lblNameBodyClass.Help" xml:space="preserve">
+    <value>Enter the CSS class of the body of the file name column.</value>
+  </data>
+  <data name="lblNameBodyClass.Text" xml:space="preserve">
+    <value>Body Class:</value>
+  </data>
+  <data name="lblNameFilter.Help" xml:space="preserve">
+    <value>Allow to filter on the file name column.</value>
+  </data>
+  <data name="lblNameFilter.Text" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="lblNameFilterMatchMode.Help" xml:space="preserve">
+    <value>Choose the filter match mode of the file name column.</value>
+  </data>
+  <data name="lblNameFilterMatchMode.Text" xml:space="preserve">
+    <value>Filter Mode:</value>
+  </data>
+  <data name="lblNameHeaderClass.Help" xml:space="preserve">
+    <value>Enter the CSS class of the header of the file name column.</value>
+  </data>
+  <data name="lblNameHeaderClass.Text" xml:space="preserve">
+    <value>Header Class:</value>
+  </data>
+  <data name="lblNameSortable.Help" xml:space="preserve">
+    <value>Allow to sort on the file name column.</value>
+  </data>
+  <data name="lblNameSortable.Text" xml:space="preserve">
+    <value>Sortable:</value>
+  </data>
+  <data name="lblOpenOnDblclick.Help" xml:space="preserve">
+    <value>Check to allow file open on file name double click.</value>
+  </data>
+  <data name="lblOpenOnDblclick.Text" xml:space="preserve">
+    <value>Open on Double click:</value>
+  </data>
+  <data name="lblPrimeUICSS.Help" xml:space="preserve">
+    <value>Enter the CDN URL of the Prime UI CSS file.</value>
+  </data>
+  <data name="lblPrimeUICSS.Text" xml:space="preserve">
+    <value>Prime UI CSS:</value>
+  </data>
+  <data name="lblPrimeUIJS.Help" xml:space="preserve">
+    <value>Enter the CDN URL of the Prime UI JavaScript file.</value>
+  </data>
+  <data name="lblPrimeUIJS.Text" xml:space="preserve">
+    <value>Prime UI JS:</value>
+  </data>
+  <data name="lblRows.Help" xml:space="preserve">
+    <value>Enter the number of files by page.</value>
+  </data>
+  <data name="lblRows.Text" xml:space="preserve">
+    <value>Rows:</value>
+  </data>
+  <data name="lblShowDate.Help" xml:space="preserve">
+    <value>Check to show the file date column.</value>
+  </data>
+  <data name="lblShowDate.Text" xml:space="preserve">
+    <value>Show:</value>
+  </data>
+  <data name="lblShowSize.Help" xml:space="preserve">
+    <value>Check to show the file size column.</value>
+  </data>
+  <data name="lblShowSize.Text" xml:space="preserve">
+    <value>Show:</value>
+  </data>
+  <data name="lblSizeBodyClass.Help" xml:space="preserve">
+    <value>Enter the CSS class of the body of the file size column.</value>
+  </data>
+  <data name="lblSizeBodyClass.Text" xml:space="preserve">
+    <value>Body Class:</value>
+  </data>
+  <data name="lblSizeFilter.Help" xml:space="preserve">
+    <value>Allow to filter on the file size column.</value>
+  </data>
+  <data name="lblSizeFilter.Text" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="lblSizeFilterMatchMode.Help" xml:space="preserve">
+    <value>Choose the filter match mode of the file size column.</value>
+  </data>
+  <data name="lblSizeFilterMatchMode.Text" xml:space="preserve">
+    <value>Filter Mode:</value>
+  </data>
+  <data name="lblSizeHeaderClass.Help" xml:space="preserve">
+    <value>Enter the CSS class of the header of the file size column.</value>
+  </data>
+  <data name="lblSizeHeaderClass.Text" xml:space="preserve">
+    <value>Header Class:</value>
+  </data>
+  <data name="lblSizeSortable.Help" xml:space="preserve">
+    <value>Allow to sort on the file size column.</value>
+  </data>
+  <data name="lblSizeSortable.Text" xml:space="preserve">
+    <value>Sortable:</value>
+  </data>
+  <data name="lblThemes.Help" xml:space="preserve">
+    <value>Select the interface theme.</value>
+  </data>
+  <data name="lblThemes.Text" xml:space="preserve">
+    <value>Theme:</value>
+  </data>
+  <data name="lblUserFolder.Text" xml:space="preserve">
+    <value>User Folder:</value>
+  </data>
+  <data name="lblUserFolder.Help" xml:space="preserve">
+    <value>Check to display the personal user folder to non admin users.</value>
+  </data>
+  <data name="SelectTheme.Text" xml:space="preserve">
+    <value>&lt;Select a theme&gt;</value>
+  </data>
+  <data name="CDN.Section" xml:space="preserve">
+    <value>CDN and Theme</value>
+  </data>
+  <data name="DateColumn.Text" xml:space="preserve">
+    <value>Date Column</value>
+  </data>
+  <data name="Miscellaneous.Text" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="NameColumn.Text" xml:space="preserve">
+    <value>Name Column</value>
+  </data>
+  <data name="SizeColumn.Text" xml:space="preserve">
+    <value>Size Column</value>
+  </data>
+  <data name="lblResetFilters.Help" xml:space="preserve">
+    <value>Check to reset the filters when another folder is selected.</value>
+  </data>
+  <data name="lblResetFilters.Text" xml:space="preserve">
+    <value>Reset Filters:</value>
+  </data>
+  <data name="lblShowIcon.Help" xml:space="preserve">
+    <value>Check to show file icon before the file name.</value>
+  </data>
+  <data name="lblShowIcon.Text" xml:space="preserve">
+    <value>Show Icon:</value>
+  </data>
+</root>

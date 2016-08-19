@@ -1,0 +1,47 @@
+﻿#documentExplorer {
+    width: 100%;
+}
+
+#deFolders {
+    width: 24%;
+    height: 355px;
+    float: left;
+}
+
+#deFiles {
+    width: 75%;
+    float: right;
+}
+
+.defHeaderName {
+    width: 100%;
+}
+
+.defBodyName {
+}
+
+.defHeaderSize {
+    width: 80px;
+}
+
+.defBodySize {
+    text-align: right;
+}
+
+.defHeaderDate {
+    width: 130px;
+}
+
+.defBodyDate {
+}
+
+.spinner {
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    background-color: Black;
+    color: white;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    -moz-opacity: 0.4;
+}

@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArchiveFile.Text" xml:space="preserve">
+    <value>Archive ({0})</value>
+  </data>
+  <data name="AudioFile.Text" xml:space="preserve">
+    <value>Audio ({0})</value>
+  </data>
+  <data name="CantPaste.Text" xml:space="preserve">
+    <value>Can't paste files to the same folder!</value>
+  </data>
+  <data name="ClipboardFailed.Text" xml:space="preserve">
+    <value>Copy to clipboard failed!</value>
+  </data>
+  <data name="ConfirmTitle.Text" xml:space="preserve">
+    <value>Confirm action</value>
+  </data>
+  <data name="DeleteFilesMessage.Text" xml:space="preserve">
+    <value>Do you confirm the deletion of the selected file(s)?</value>
+  </data>
+  <data name="DialogCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DialogOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorTitle.Text" xml:space="preserve">
+    <value>An error has occurred</value>
+  </data>
+  <data name="ExcelFile.Text" xml:space="preserve">
+    <value>Excel ({0})</value>
+  </data>
+  <data name="FileClipboard.Text" xml:space="preserve">
+    <value>Copy URL</value>
+  </data>
+  <data name="ItemCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ItemCut.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="ItemDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="FileDownload.Text" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="ItemName.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="FileOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="FilePack.Text" xml:space="preserve">
+    <value>Pack</value>
+  </data>
+  <data name="ItemPaste.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="FileUnpack.Text" xml:space="preserve">
+    <value>Unpack</value>
+  </data>
+  <data name="FolderPathEmpty.Text" xml:space="preserve">
+    <value>Folder path can't be empty!</value>
+  </data>
+  <data name="FolderSynchronize.Text" xml:space="preserve">
+    <value>Synchronize</value>
+  </data>
+  <data name="HeaderDate.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="HeaderExtension.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="HeaderName.Text" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="HeaderSize.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="ImageFile.Text" xml:space="preserve">
+    <value>Image ({0} - {1} x {2})</value>
+  </data>
+  <data name="Loading.Text" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="MiscFile.Text" xml:space="preserve">
+    <value>Miscellaneous ({0})</value>
+  </data>
+  <data name="NoFiles.Text" xml:space="preserve">
+    <value>No files found!</value>
+  </data>
+  <data name="PackNameTitle.Text" xml:space="preserve">
+    <value>Packing file(s)</value>
+  </data>
+  <data name="PDFFile.Text" xml:space="preserve">
+    <value>Adobe PDF ({0})</value>
+  </data>
+  <data name="PowerPointFile.Text" xml:space="preserve">
+    <value>PowerPoint ({0})</value>
+  </data>
+  <data name="RootFolder.Text" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="Sizes.Text" xml:space="preserve">
+    <value>Bytes,KB,MB,GB,TB,PB</value>
+  </data>
+  <data name="TextFile.Text" xml:space="preserve">
+    <value>Text ({0})</value>
+  </data>
+  <data name="UnattentedError.Text" xml:space="preserve">
+    <value>Unattended error!</value>
+  </data>
+  <data name="UserFolder.Text" xml:space="preserve">
+    <value>Personal folder</value>
+  </data>
+  <data name="VideoFile.Text" xml:space="preserve">
+    <value>Video ({0})</value>
+  </data>
+  <data name="WordFile.Text" xml:space="preserve">
+    <value>Word ({0})</value>
+  </data>
+  <data name="ZeroByte.Text" xml:space="preserve">
+    <value>0 Byte</value>
+  </data>
+  <data name="ItemRename.Text" xml:space="preserve">
+    <value>Rename...</value>
+  </data>
+  <data name="RenameFileTitle.Text" xml:space="preserve">
+    <value>Rename file</value>
+  </data>
+  <data name="CreateFolderTitle.Text" xml:space="preserve">
+    <value>Create folder</value>
+  </data>
+  <data name="DeleteFolderMessage.Text" xml:space="preserve">
+    <value>Do you confirm the deletion of the selected folder?</value>
+  </data>
+  <data name="FolderCreate.Text" xml:space="preserve">
+    <value>Create...</value>
+  </data>
+  <data name="FolderSynchronizeRecurse.Text" xml:space="preserve">
+    <value>Synchronize recurse</value>
+  </data>
+  <data name="RenameFolderTitle.Text" xml:space="preserve">
+    <value>Rename folder</value>
+  </data>
+  <data name="FolderNotEmpty.Text" xml:space="preserve">
+    <value>Unable to delete folder because it is not empty!</value>
+  </data>
+  <data name="ItemSelectAll.Text" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+</root>
