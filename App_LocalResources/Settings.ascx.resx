@@ -315,4 +315,22 @@
   <data name="lblShowIcon.Text" xml:space="preserve">
     <value>Show Icon:</value>
   </data>
+  <data name="lblImagePreview.Help" xml:space="preserve">
+    <value>Check to allow image preview. This features can consume CPU resources when a lot of visitors use it, because the image is resized on the fly.</value>
+  </data>
+  <data name="lblImagePreview.Text" xml:space="preserve">
+    <value>Image Preview:</value>
+  </data>
+  <data name="lblThumbnailHeight.Help" xml:space="preserve">
+    <value>Max height in pixel of the thumbnail when image preview is enabled.</value>
+  </data>
+  <data name="lblThumbnailHeight.Text" xml:space="preserve">
+    <value>Thumbnail Height:</value>
+  </data>
+  <data name="lblThumbnailWidth.Help" xml:space="preserve">
+    <value>Max width in pixel of the thumbnail when image preview is enabled.</value>
+  </data>
+  <data name="lblThumbnailWidth.Text" xml:space="preserve">
+    <value>Thumbnail Width:</value>
+  </data>
 </root>

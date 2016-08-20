@@ -135,6 +135,18 @@
             <dnn:Label ID="lblOpenOnDblclick" runat="server" ControlName="chkOpenOnDblclick"></dnn:Label>
             <asp:CheckBox ID="chkOpenOnDblclick" runat="server" />
         </div>
+        <div class="dnnFormItem">
+            <dnn:Label ID="lblImagePreview" runat="server" ControlName="chkImagePreview"></dnn:Label>
+            <asp:CheckBox ID="chkImagePreview" runat="server" />
+        </div>
+        <div class="dnnFormItem">
+            <dnn:Label ID="lblThumbnailWidth" runat="server" controlname="txtThumbnailWidth"></dnn:Label>
+            <asp:TextBox ID="txtThumbnailWidth" runat="server" Width="50"></asp:TextBox>
+        </div>
+        <div class="dnnFormItem">
+            <dnn:Label ID="lblThumbnailHeight" runat="server" controlname="txtThumbnailHeight"></dnn:Label>
+            <asp:TextBox ID="txtThumbnailHeight" runat="server" Width="50"></asp:TextBox>
+        </div>
     </fieldset>
 </div>
 

@@ -62,6 +62,9 @@ namespace TidyModules.DocumentExplorer
                 chkUserFolder.Checked = settings.UserFolder;
                 chkFileManagement.Checked = settings.FileManagement;
                 chkOpenOnDblclick.Checked = settings.OpenOnDblclick;
+                chkImagePreview.Checked = settings.ImagePreview;
+                txtThumbnailWidth.Text = settings.ThumbnailWidth.ToString();
+                txtThumbnailHeight.Text = settings.ThumbnailHeight.ToString();
             }
             catch (Exception exc)
             {
@@ -112,6 +115,9 @@ namespace TidyModules.DocumentExplorer
                 settings.UserFolder = chkUserFolder.Checked;
                 settings.FileManagement = chkFileManagement.Checked;
                 settings.OpenOnDblclick = chkOpenOnDblclick.Checked;
+                settings.ImagePreview = chkImagePreview.Checked;
+                settings.ThumbnailWidth = int.Parse(txtThumbnailWidth.Text);
+                settings.ThumbnailHeight = int.Parse(txtThumbnailHeight.Text);
 
                 settings.UpdateSettings();
             }

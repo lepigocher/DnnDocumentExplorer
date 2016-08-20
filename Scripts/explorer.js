@@ -5,7 +5,8 @@
         locale = null,
         sizes = null,
         showIcon = false,
-        fileManagement = false,
+        fileManagement = false
+        imagePreview = false,
         hasFilter = false,
         resetFilters = false,
         dlgWindow = null,
@@ -282,6 +283,10 @@
             options.push(itemTmpl.format("cmfDelete", "fa-trash", locale["itemDelete"]));
         }
 
+        if (imagePreview) {
+            options.push(itemTmpl.format("cmfPreview", "fa-eye", locale["imagePreview"]));
+        }
+
         options.push(itemTmpl.format("cmfOpen", "fa-external-link", locale["fileOpen"]));
         options.push(itemTmpl.format("cmfDownload", "fa-download", locale["fileDownload"]));
         options.push(itemTmpl.format("cmfClipboard", "fa-link", locale["fileClipboard"]));
@@ -326,6 +331,14 @@
         cmFolders.puicontextmenu({
             target: deFolders
         });
+    }
+
+    // Check if the file is an image
+    function isImage(extension) {
+        if (extension == "bmp" || extension == "jpg" || extension == "png" || extension == "gif")
+            return true;
+
+        return false;
     }
 
     // Build full url from relative path
@@ -424,6 +437,39 @@
                     }).fail(function (xhr, result, status) {
                         showError(status, xhr.responseText);
                     });
+                });
+                break;
+            case "cmfPreview":
+                var file = deFiles.puidatatable("getContextMenuSelection");
+                var cmd = new ItemCommand(folder.path, getFileNames(file));
+
+                $.ajax({
+                    type: "GET",
+                    url: services.format("Thumbnail"),
+                    data: cmd,
+                    beforeSend: sf.setModuleHeaders
+                }).done(function (result, status, xhr) {
+                    var html = "<div><img src='" + result + "' /></div>";
+
+                    $(html).dialog({
+                        modal: true,
+                        width: "auto",
+                        title: locale["imagePreviewTitle"],
+                        dialogClass: "dnnFormPopup",
+                        buttons: [
+                                {
+                                    text: locale["dialogClose"],
+                                    click: function () {
+                                        $(this).dialog("close");
+                                    }
+                                }
+                        ],
+                        close: function () {
+                            $(this).dialog("destroy").remove();
+                        }
+                    });
+                }).fail(function (xhr, result, status) {
+                    showError(status, xhr.responseText);
                 });
                 break;
             case "cmfOpen":
@@ -683,9 +729,12 @@
 
         if (counter > 1) {
             cmFiles.find("#cmfRename").addClass("ui-state-disabled");
+            cmFiles.find("#cmfPreview").addClass("ui-state-disabled");
             cmFiles.find("#cmfOpen").addClass("ui-state-disabled");
             cmFiles.find("#cmfDownload").addClass("ui-state-disabled");
             cmFiles.find("#cmfClipboard").addClass("ui-state-disabled");
+        } else if (!isImage(data.extension)) {
+            cmFiles.find("#cmfPreview").addClass("ui-state-disabled");
         }
     }
 
@@ -696,6 +745,7 @@
         sizes = locale["sizes"].split(",");
         showIcon = options.showIcon;
         fileManagement = options.fileManagement;
+        imagePreview = options.imagePreview;
         resetFilters = options.resetFilters;
 
         // Init dialog windows

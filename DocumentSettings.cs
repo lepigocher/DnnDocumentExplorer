@@ -100,6 +100,15 @@ namespace TidyModules.DocumentExplorer
         [ModuleSetting("OpenOnDblclick", "false")]
         public bool OpenOnDblclick { get; set; }
 
+        [ModuleSetting("ImagePreview", "true")]
+        public bool ImagePreview { get; set; }
+
+        [ModuleSetting("ThumbnailWidth", "450")]
+        public int ThumbnailWidth { get; set; }
+
+        [ModuleSetting("ThumbnailHeight", "300")]
+        public int ThumbnailHeight { get; set; }
+
         #endregion
     }
 }

@@ -60,7 +60,8 @@ namespace TidyModules.DocumentExplorer.Components
                     Columns = GetColumns(settings),
                     SynchronizeFolder = IsAdmin,
                     FileManagement = settings.FileManagement,
-                    OpenOnDblclick = settings.OpenOnDblclick
+                    OpenOnDblclick = settings.OpenOnDblclick,
+                    ImagePreview = settings.ImagePreview
                 };
 
                 return Request.CreateResponse(HttpStatusCode.OK, options, GetFormatter());
@@ -164,7 +165,48 @@ namespace TidyModules.DocumentExplorer.Components
                     string url = Globals.LinkClick(string.Format("FileID={0}", file.FileId), -1, -1, false, forceDownload);
 
                     return Request.CreateResponse(HttpStatusCode.OK, url);
+                }
 
+                return Request.CreateResponse(HttpStatusCode.NotFound, filePath);
+            }
+            catch
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, LocalizeString("UnattentedError"));
+            }
+        }
+
+        /// <summary>
+        /// Get image thumbnail.
+        /// </summary>
+        /// <returns>Options</returns>
+        [HttpGet]
+        [ValidateAntiForgeryToken]
+        [SupportedModules("TidyModules.DocumentExplorer")]
+        [DnnAuthorize]
+        public HttpResponseMessage Thumbnail([FromUri] ItemCommand itemCommand)
+        {
+            try
+            {
+                string folderPath = PathUtils.Instance.FormatFolderPath(itemCommand.Path);
+                string filePath = folderPath + itemCommand.Files[0];
+                IFileInfo file = FileManager.Instance.GetFile(PortalSettings.PortalId, filePath);
+
+                if (file != null)
+                {
+                    DocumentSettings settings = new DocumentSettings(ActiveModule);
+                    int height = settings.ThumbnailHeight;
+                    int width = settings.ThumbnailWidth;
+                    string extension = "." + file.Extension;
+
+                    using (Stream content = FileManager.Instance.GetFileContent(file))
+                    {
+                        using (Stream thumbnail = ImageUtils.CreateImage(content, height, width, extension))
+                        {
+                            string img64 = string.Format("data:{0};base64,{1}", file.ContentType, ReadFullyAsBase64(thumbnail));
+
+                            return Request.CreateResponse(HttpStatusCode.OK, img64);
+                        }
+                    }
                 }
 
                 return Request.CreateResponse(HttpStatusCode.NotFound, filePath);
@@ -522,8 +564,10 @@ namespace TidyModules.DocumentExplorer.Components
             resources.Add("renameFolderTitle", LocalizeString("RenameFolderTitle"));
             resources.Add("renameFileTitle", LocalizeString("RenameFileTitle"));
             resources.Add("packNameTitle", LocalizeString("PackNameTitle"));
+            resources.Add("imagePreviewTitle", LocalizeString("ImagePreviewTitle"));
             resources.Add("dialogOk", LocalizeString("DialogOk"));
             resources.Add("dialogCancel", LocalizeString("DialogCancel"));
+            resources.Add("dialogClose", LocalizeString("DialogClose"));
             resources.Add("deleteFolderMessage", LocalizeString("DeleteFolderMessage"));
             resources.Add("deleteFilesMessage", LocalizeString("DeleteFilesMessage"));
             resources.Add("itemSelectAll", LocalizeString("ItemSelectAll"));
@@ -534,6 +578,7 @@ namespace TidyModules.DocumentExplorer.Components
             resources.Add("cantPaste", LocalizeString("CantPaste"));
             resources.Add("itemRename", LocalizeString("ItemRename"));
             resources.Add("itemDelete", LocalizeString("ItemDelete"));
+            resources.Add("imagePreview", LocalizeString("ImagePreview"));
             resources.Add("fileOpen", LocalizeString("FileOpen"));
             resources.Add("fileDownload", LocalizeString("FileDownload"));
             resources.Add("fileClipboard", LocalizeString("FileClipboard"));
@@ -831,6 +876,22 @@ namespace TidyModules.DocumentExplorer.Components
             }
 
             return error;
+        }
+
+        /// <summary>
+        /// Convert content from a stream to a base 64 string.
+        /// </summary>
+        /// <param name="input">Stream</param>
+        /// <returns>Base 64 string</returns>
+        private string ReadFullyAsBase64(Stream input)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                input.Position = 0;
+                input.CopyTo(ms);
+
+                return Convert.ToBase64String(ms.ToArray());
+            }
         }
 
         #endregion

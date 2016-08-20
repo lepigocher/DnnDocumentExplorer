@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="TidyModules.DocumentExplorer" type="Module" version="0.1.0">
+  <packages><package name="TidyModules.DocumentExplorer" type="Module" version="0.1.1">
   <friendlyName>Document Explorer</friendlyName>
   <description>Lightweight module to manage DNN files.</description>
   <iconFile />
@@ -10,7 +10,8 @@
     <email>contact@tidy-modules.com</email>
   </owner>
   <license>Licenced under MIT licence terms. Copyright 2016 Tidy Modules.</license>
-  <releaseNotes>First Beta version DO NOT USE in production!</releaseNotes>
+  <releaseNotes>Second Beta version DO NOT USE in production!
+Image preview added.</releaseNotes>
   <components>
     <component type="Module">
       <desktopModule>

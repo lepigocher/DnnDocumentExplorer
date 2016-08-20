@@ -12,5 +12,6 @@ namespace TidyModules.DocumentExplorer.Common
         public bool SynchronizeFolder { get; set; }
         public bool FileManagement { get; set; }
         public bool OpenOnDblclick { get; set; }
+        public bool ImagePreview { get; set; }
     }
 }

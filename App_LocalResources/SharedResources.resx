@@ -267,4 +267,13 @@
   <data name="ItemSelectAll.Text" xml:space="preserve">
     <value>Select all</value>
   </data>
+  <data name="ImagePreview.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="DialogClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ImagePreviewTitle.Text" xml:space="preserve">
+    <value>Image preview</value>
+  </data>
 </root>
